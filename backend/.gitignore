@@ -41,3 +41,4 @@ output/
 # Model files (large)
 *.pt
 *.pth
+*.pt
