@@ -1,0 +1,125 @@
+.test-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+     rgba(216, 204, 176, 0.705),
+  rgba(208, 194, 160, 0.7)
+    ),
+    url("https://www.thestatesman.com/wp-content/uploads/2025/07/Untitled-design-42-8.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.test-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.test-container h1 {
+  color: #b85c00;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.test-container p {
+  color: #5a3e1b;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  padding: 12px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.parking {
+  background: #ffb347;
+  color: white;
+}
+
+.btn.parking:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 179, 71, 0.6);
+}
+
+.btn.people {
+  background: #ff7f7f;
+  color: white;
+}
+
+.btn.people:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(255, 127, 127, 0.6);
+}
+
+.data-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background: #d17e2f;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.data-section button:hover {
+  background: #b56c29;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(209, 126, 47, 0.5);
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+th {
+  background: #d17e2f;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  color: #5a3e1b;
+}
+
+tr:hover td {
+  background: #ffe4c4;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
+
+tr:nth-child(even) td {
+  background: rgba(255, 248, 230, 0.9);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,38 @@
+Run guide (after cloning from GitHub)
+
+1. Open a terminal.
+2. Clone the repository:
+
+and then for
+
+Frontend setup and run
+
+1. Go to frontend folder:
+	cd frontend
+2. Install frontend dependencies:
+	npm install
+3. Start frontend:
+	npm run dev
+4. Open the URL shown in terminal (usually http://localhost:5173).
+
+Backend setup and run
+
+1. Return to project root (if currently inside frontend):
+	cd ..
+2. Create virtual environment:
+	python -m venv .venv
+3. Activate virtual environment (PowerShell):
+	.\.venv\Scripts\Activate.ps1
+4. Go to backend folder:
+	cd backend
+5. Install required Python packages:
+	pip install flask flask-cors mysql-connector-python opencv-python ultralytics
+6. Run backend server:
+	python app.py
+
+Notes
+
+- Install Node.js 18+ for frontend.
+- Install Python 3.10+ for backend.
+- MySQL server must be running and database credentials in backend/db.py must be correct.
+- Keep frontend and backend running in separate terminals.

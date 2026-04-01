@@ -1,0 +1,112 @@
+.contact-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+     rgba(216, 204, 176, 0.705),
+  rgba(208, 194, 160, 0.7)
+    ),
+    url("https://www.thestatesman.com/wp-content/uploads/2025/07/Untitled-design-42-8.webp");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.contact-wrapper {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 8%;
+  flex-wrap: wrap;
+}
+
+.contact-form-section,
+.contact-info-section {
+  flex: 1;
+  max-width: 450px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-form-section:hover,
+.contact-info-section:hover {
+  transform: translateY(-5px);
+}
+
+.contact-form-section h1 {
+  color: #b85c00;
+}
+
+.contact-info-section h2 {
+  color: #b85c00;
+}
+
+form input,
+form textarea {
+  width: 93%;
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #e07a1f;
+  box-shadow: 0 0 8px rgba(224,122,31,0.3);
+}
+
+form button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  background: #e07a1f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #c25a00;
+  transform: scale(1.05);
+}
+
+.contact-info-section p {
+  margin: 10px 0;
+  color: #4a3f35;
+}
+
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #b85c00;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #e07a1f;
+  transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
