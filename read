@@ -2,7 +2,7 @@ Run guide (after cloning from GitHub)
 
 1. Open a terminal.
 2. Clone the repository:
-
+	git clone https://github.com/theagrim0410/stcms
 and then for
 
 Frontend setup and run
@@ -16,7 +16,7 @@ Frontend setup and run
 4. Open the URL shown in terminal (usually http://localhost:5173).
 
 Backend setup and run
-
+ ** open new terminal **  
 1. Return to project root (if currently inside frontend):
 	cd ..
 2. Create virtual environment:
@@ -34,5 +34,5 @@ Notes
 
 - Install Node.js 18+ for frontend.
 - Install Python 3.10+ for backend.
-- MySQL server must be running and database credentials in backend/db.py must be correct.
+- MySQL server must be running and database credentials in backend/db.py must be correct and must change password .
 - Keep frontend and backend running in separate terminals.
